@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/shopping_online
+    username: root
+    password: 2002
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: haininh539@gmail.com
+    password: jtrqtuqxjgftiqqc
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls.enable: true
+
+media:
+  img_path: "${user.home}${file.separator}Downloads${file.separator}images"
